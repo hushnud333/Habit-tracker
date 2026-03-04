@@ -1,0 +1,56 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;700&display=swap');
+@import "tailwindcss";
+
+@theme {
+  --font-sans: "Inter", ui-sans-serif, system-ui, sans-serif;
+  --font-mono: "JetBrains Mono", ui-monospace, SFMono-Regular, monospace;
+  
+  --color-gaming-dark: #0a0e1a;
+  --color-gaming-card: #161b2d;
+  --color-gaming-accent: #3b82f6;
+  --color-gaming-xp: #10b981;
+  --color-gaming-hp: #ef4444;
+  --color-gaming-streak: #f59e0b;
+}
+
+body {
+  background-color: var(--color-gaming-dark);
+  color: #f8fafc;
+  font-family: var(--font-sans);
+}
+
+.gaming-card {
+  background-color: var(--color-gaming-card);
+  border: 1px solid rgba(59, 130, 246, 0.1);
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.4);
+}
+
+.gaming-glow {
+  box-shadow: 0 0 15px rgba(59, 130, 246, 0.3);
+}
+
+.xp-glow {
+  box-shadow: 0 0 10px rgba(16, 185, 129, 0.3);
+}
+
+.hp-glow {
+  box-shadow: 0 0 10px rgba(239, 68, 68, 0.3);
+}
+
+/* Custom scrollbar */
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: var(--color-gaming-dark);
+}
+
+::-webkit-scrollbar-thumb {
+  background: #2d3748;
+  border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #4a5568;
+}
